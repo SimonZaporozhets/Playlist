@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Playlist</string>
+
+    <string name="song1_name">Gimme Shelter</string>
+    <string name="song1_author">The Rolling Stones</string>
+    <string name="song2_name">One</string>
+    <string name="song2_author">U2</string>
+    <string name="song3_name">No Woman, No Cry</string>
+    <string name="song3_author">Bob Marley</string>
+    <string name="song4_name">You’ve Lost That Lovin’ Feeling</string>
+    <string name="song4_author">The Righteous Brothers</string>
+    <string name="song5_name">Sympathy For The Devil</string>
+    <string name="song5_author">The Rolling Stones</string>
+    <string name="song6_name">I Walk The Line</string>
+    <string name="song6_author">Johnny Cash</string>
+    <string name="song7_name">River Deep – Mountain High</string>
+    <string name="song7_author">Ike and Tina Turner</string>
+    <string name="song8_name">Help!</string>
+    <string name="song8_author">The Beatles</string>
+    <string name="song9_name">People Get Ready</string>
+    <string name="song9_author">The Impressions</string>
+    <string name="song10_name">In My Life</string>
+    <string name="song10_author">The Beatles</string>
 </resources>
