@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/drawable-v24/gradient_center.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/drawable-v24/gradient_end.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/drawable/bg_gradient.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/drawable/gradient_animator.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/Simon/StudioProjects/Playlist/app/src/main/res/layout/view_pager_item.xml" value="0.16666666666666666" />
       </map>

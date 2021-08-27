@@ -1,5 +1,6 @@
 package com.szaporozhets.playlist
 
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.szaporozhets.playlist.databinding.ActivityMainBinding
@@ -8,6 +9,8 @@ import com.szaporozhets.playlist.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private lateinit var animationDrawable: AnimationDrawable
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +22,25 @@ class MainActivity : AppCompatActivity() {
         binding.viewPager.setPageTransformer(DepthPageTransformer())
 
         binding.viewPager.adapter = ViewPagerAdapter(list.shuffled())
+
+        animationDrawable = binding.rootLayout.background as AnimationDrawable
+        animationDrawable.setEnterFadeDuration(10)
+        animationDrawable.setExitFadeDuration(5000)
+        animationDrawable.start()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (!animationDrawable.isRunning) {
+            animationDrawable.start()
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        if (animationDrawable.isRunning) {
+            animationDrawable.stop()
+        }
     }
 
     private fun initList(): MutableList<SongUiModel> {
