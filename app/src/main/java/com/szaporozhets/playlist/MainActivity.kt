@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         val list: MutableList<SongUiModel> = initList()
 
-        binding.viewPager.adapter = ViewPagerAdapter(list)
+        binding.viewPager.setPageTransformer(DepthPageTransformer())
+
+        binding.viewPager.adapter = ViewPagerAdapter(list.shuffled())
     }
 
     private fun initList(): MutableList<SongUiModel> {
